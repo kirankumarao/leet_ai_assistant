@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode AI Assistant",
+  "version": "1.0",
+  "description": "An AI-powered assistant for LeetCode problems, providing hints, solutions, and a chat interface.",
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/problems/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "storage"
+  ]
+}
